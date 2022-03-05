@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
+using System.Text.Json;
 
 namespace ExceptionHandler.Exceptions;
 
@@ -25,7 +26,11 @@ public static class CoreExceptionMiddlewareExtensions
                     {
                         context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
 
-                        await context.Response.WriteAsJsonAsync(coreException);
+                        await context.Response.WriteAsJsonAsync(coreException,
+                        new JsonSerializerOptions
+                        {
+                            Converters = { new CoreExceptionJsonConverter() }
+                        });
                     }
                     else
                     {
@@ -38,7 +43,11 @@ public static class CoreExceptionMiddlewareExtensions
                                 (context.Response.StatusCode, contextFeature.Error.Message);
                         }
 
-                        await context.Response.WriteAsJsonAsync(internalError);
+                        await context.Response.WriteAsJsonAsync(internalError,
+                        new JsonSerializerOptions
+                        {
+                            Converters = { new InternalErrorJsonConverter() }
+                        });
                     }
                 }
             });

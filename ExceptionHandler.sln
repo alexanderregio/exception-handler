@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandler.Exceptions", "ExceptionHandler.Exceptions\ExceptionHandler.Exceptions.csproj", "{350255DF-8238-4A11-850D-18313D077925}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandler.Tests", "ExceptionHandler.Tests\ExceptionHandler.Tests.csproj", "{3B81A1E0-74C9-4B34-B170-5243875DE46F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandler.Tests", "ExceptionHandler.Tests\ExceptionHandler.Tests.csproj", "{3B81A1E0-74C9-4B34-B170-5243875DE46F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandler.WebApi", "ExceptionHandler.WebApi\ExceptionHandler.WebApi.csproj", "{0B67D133-00B3-4A7D-92E3-02D944EF9970}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3B81A1E0-74C9-4B34-B170-5243875DE46F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B81A1E0-74C9-4B34-B170-5243875DE46F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B81A1E0-74C9-4B34-B170-5243875DE46F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B67D133-00B3-4A7D-92E3-02D944EF9970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B67D133-00B3-4A7D-92E3-02D944EF9970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B67D133-00B3-4A7D-92E3-02D944EF9970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B67D133-00B3-4A7D-92E3-02D944EF9970}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
