@@ -1,5 +1,4 @@
 ﻿using ExceptionHandler.Exceptions;
-using System;
 using System.Runtime.Serialization;
 
 namespace ExceptionHandler.Tests;

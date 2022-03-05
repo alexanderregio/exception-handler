@@ -2,6 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
 		<IsPackable>false</IsPackable>
 	</PropertyGroup>
 
@@ -19,7 +20,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\ExceptionHandler.Exceptions\ExceptionHandler.Exceptions.csproj" />
+		<ProjectReference Include="..\ExceptionHandler.Exceptions\ExceptionHandler.Exceptions.csproj" />
 	</ItemGroup>
 
 </Project>
