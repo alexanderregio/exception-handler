@@ -1,5 +1,4 @@
 ﻿using ExceptionHandler.Exceptions;
-using System.Linq;
 using Xunit;
 
 namespace ExceptionHandler.Tests;
