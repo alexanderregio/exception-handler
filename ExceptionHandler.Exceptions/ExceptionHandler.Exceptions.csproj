@@ -4,7 +4,11 @@
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<IsPackable>true</IsPackable>
-		<Version>6.0.0</Version>
+		<Version>1.0.0</Version>
+		<Description>Pacote para realizar tratamento de exceções de negócio do domínio e disparar da requisição com status 400 - BadRequest</Description>
+		<RepositoryUrl>https://github.com/alexanderregio/exception-handler</RepositoryUrl>
+		<PackageReleaseNotes>Initial</PackageReleaseNotes>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	</PropertyGroup>
 
 </Project>

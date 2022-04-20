@@ -6,7 +6,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\ExceptionHandler.Exceptions\ExceptionHandler.Exceptions.csproj" />
+	  <PackageReference Include="ExceptionHandler.Exceptions" Version="1.0.0" />
 	</ItemGroup>
 
 </Project>
