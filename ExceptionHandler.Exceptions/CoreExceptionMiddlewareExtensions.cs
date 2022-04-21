@@ -26,10 +26,10 @@ public static class CoreExceptionMiddlewareExtensions
                     {
                         context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
 
-                        await context.Response.WriteAsJsonAsync(coreException,
-                        new JsonSerializerOptions
+                        await context.Response.WriteAsJsonAsync(new CoreExceptionDto
                         {
-                            Converters = { new CoreExceptionJsonConverter() }
+                            Key = coreException.Key,
+                            Errors = coreException.Errors.Select(e => new CoreErrorDto { Key = e.Key, Message = e.Message })
                         });
                     }
                     else
